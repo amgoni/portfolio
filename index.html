@@ -9,8 +9,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/c2c6510de5.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
 	<title>Amin Goni | Front-end Web Dev</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
@@ -19,18 +17,34 @@
 	<header id="header">
 		<nav class="main-nav">
 			<ul>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about">About Me</a></li>
 				<li><a href="#">Resume</a></li>
-				<li><a href="#">Contact Me</a></li>
+				<li><a href="#contact">Contact Me</a></li>
 			</ul>
+			<button type="button" class="hamburger" id="menu-btn">
+          		<span class="hamburger-top"></span>
+         		<span class="hamburger-middle"></span>
+          		<span class="hamburger-bottom"></span>
+        	</button>
 		</nav>
 	</header>
+
+	<!-- MOBILE MENU -->
+
+	<div class="mobile-menu hidden" id="menu">
+		<ul>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+		</ul>
+	</div>
 
 	<!-- HERO -->
 
 	<section id="hero">
-		<div class="container">
+		<div class="container left">
 			<h1>Hi, my name is Amin Mohammed Goni.<br>
 			I am a Front-End Web Developer and UX Designer.</h1>
 			<button class="btn">Hire Me</button>
@@ -40,18 +54,18 @@
 	<!-- ABOUT -->
 
 	<section id="about">
-		<h1 class="about-me">ABOUT ME</h1>
-		<div class="container">
-			<div class="img">
+		<h1 class="about-me buttom">ABOUT ME</h1>
+		<div class="container buttom">
+			<div class="img left">
 				<img src="./img/profile.jpg">
 			</div>
-			<div class="bio">
+			<div class="bio right">
 				<p>
 					I am a front-end web developer and user experience designer that is passionate about integrating my user experience design knowledge to building user-centered websites that are modern, accessible and responsive. I got into web development and user experience design to develop websites and applications that are useful, equitable, usable and enjoyable. I love how user experience design has changed the way we approach designing and developing websites, applications, devices and almost every product in the world.<br>
 					Whenever I’m not coding or designing, I’m usually just either watching football, watching a movie or tv show, reading or playing video games.
 				</p>
 			</div>
-			<div class="skills">
+			<div class="skills right">
 				<h3>My Skills and Tools:</h3>
 				<ul>
 					<li>Web Development</li>
@@ -76,36 +90,36 @@
 
 	<!-- PROJECTS -->
 
-	<section id="projects" class="headline">
-		<h1>FEATURED PROJECTS</h1>
+	<section id="projects">
+		<h1 class="bottom">FEATURED PROJECTS</h1>
 		<div class="container">
 				<div class="project-container">
-					<div class="project">
+					<div class="project left">
 						<h3>MetroBase Travels and Tours</h3>
 						<p>This is a multi-page website template I made using just HTML and CSS. I made from a UI I made and translated the design to a working website. This project helped me to practice how to translate a UI design to a fully working website that is responsive.</p>
 						<a href="#"><button class="btn see-live">See Live</button></a>
 					</div>
-					<div data-tilt>
+					<div class="right">
 						<img src="./img/project1.png">
 					</div>
 				</div>
 				<div class="project-container">
-					<div class="project">
+					<div class="project left">
 						<h3>Background Generator</h3>
 						<p>This is a website I developed whilst learning Javascript. It can be used to generate beautiful background gradients that can be used by others. The RGBA code of the color generated is displayed so that users can copy it for their own use.</p>
 						<a href="#"><button class="btn see-live">See Live</button></a>
 					</div>
-					<div>
+					<div class="right">
 						<img src="./img/project2.jpg">
 					</div>
 				</div>
 				<div class="project-container">
-					<div class="project">
+					<div class="project left">
 						<h3>RoboFriends</h3>
 						<p>This was my first project when I started learning React. It is just a simple project that helped me to learn how to make reusable components, import and export components, get a basic understanding of how APIs work and be able to make a fully functional search bar. It was a very important project for me because it helped me get my foot on some of the foundations of React.</p>
 						<a href="#"><button class="btn see-live">See Live</button></a>
 					</div>
-					<div>
+					<div class="right">
 						<img src="./img/project3.png">
 					</div>
 				</div>
@@ -116,17 +130,17 @@
 	<!-- CONTACT -->
 
 	<section id="contact">
-		<div class="container">
-			<h1>CONTACT ME</h1>
-			<p>Looking to hire a Front-End Developer or UX Designer?</p>
-			<a href="mailto:ameen.m.goney@gmail.com"><button class="btn email">E-mail Me!</button></a>
+		<div class="container bottom">
+			<h1 class="buttom">CONTACT ME</h1>
+			<p class="buttom">Looking to hire a Front-End Developer or UX Designer?</p>
+			<a href="mailto:ameen.m.goney@gmail.com"><button class="btn email buttom">E-mail Me!</button></a>
 		</div>
 	</section>
 
 	<!-- FOOTER -->
 
 	<footer id="footer">
-		<div class="container">
+		<div class="container buttom">
 			<div class="socials">
 				<ul>
 					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -142,11 +156,11 @@
 	</footer>
 
 	<script type="text/javascript">
-		ScrollReveal().reveal('.headline', {delay: 500});
-		ScrollReveal().reveal('.container', {delay: 500});
-		ScrollReveal().reveal('.about-me', {delay: 500});
+		ScrollReveal().reveal('.left', {delay: 500, distance: '50px', origin: 'left'});
+		ScrollReveal().reveal('.right', {delay: 500, distance: '50px', origin: 'right'});
+		ScrollReveal().reveal('.buttom', {delay: 500, distance: '50px', origin: 'bottom'});
 	</script>
-	<script src="tilt.jquery.js"></script>
+	<script src="script.js"></script>
 
 </body>
 </html>
