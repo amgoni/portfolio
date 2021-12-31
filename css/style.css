@@ -401,7 +401,7 @@ a {
   }
 
   #footer {
-    height: 30vh;
+    height: 15vh;
   }
   #footer .container {
     height: unset;
@@ -409,6 +409,7 @@ a {
   }
   #footer .container i {
     font-size: 2em;
+    margin: 0.5em;
   }
 }
 
