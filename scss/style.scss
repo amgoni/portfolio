@@ -74,9 +74,9 @@ a {
 #header {
 
 	a:hover {
-		color: $extra-color;
-		text-shadow: 1px 1px $dark-text-color;
+		color: $light-text-color;
 	}
+
 	ul {
 	display: flex;
 	justify-content: space-around;
@@ -86,6 +86,13 @@ a {
 
 		li {
 			list-style: none;
+			padding: 10px;
+			transition: all 0.3s ease;
+		}
+
+		li:hover {
+			background-color: $dark-background;
+			color: $light-text-color;
 		}
 	}
 }
@@ -94,7 +101,7 @@ a {
 
 #hero {
 	background: $light-background;
-	height: 100vh;
+	height: 95vh;
 
 	.container {
 		display: flex;
@@ -128,51 +135,48 @@ a {
 	h1 {
 		width: fit-content;
 		margin: auto;
-		padding: 50px 0;
+		padding-top: 50px;
 	}
 
 	.container {
-		display: grid;
-		// height: 90%;
-		grid-gap: 3em;
-		grid-template-columns: 20rem 2fr;
-		grid-template-rows: auto;
+		display: flex;
+    overflow: visible;
+    flex-direction: column;
+    align-items: center;
 		overflow: visible;
 
-		.skills {
-			grid-column-start: 2;
-			grid-column-end: 3;
-			display: grid;
-			grid-gap: 1em;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 3fr;
-			margin-bottom: 20px;
+		button {
+			width: fit-content;
+			margin-bottom: 40px;
+		}
 
-			ul {
+		button:hover {
+			border: 2px solid $light-background;
+			background: inherit;
+		}
+
+		* {
+			margin: 10px;
+		}
+
+		.img-bio {
+			display: flex;
+		}
+
+		.skills-tools {
+			display: flex;
+			width: 100%;
+    	justify-content: space-evenly;
+    	ul {
 				line-height: 30px;
 			}
+		}
 
-			h3 {
-				grid-column-start: 1;
-				grid-column-end: 3;
-			}
-
-			a {
-				grid-column-start: 1;
-				grid-column-end: 2;
-			}
-
-			button {
-				width: fit-content;
-				margin: 10px;
-				grid-column-start: 1;
-				grid-column-end: 2;
-			}
-
-			button:hover {
-				border: 2px solid $light-background;
-				background: inherit;
-			}
+		.img {
+			display: flex;
+			justify-content: center;
+    	align-items: center;
+    	width: 100%;
 		}
 
 		img {
@@ -298,6 +302,7 @@ a {
   z-index: 10;
   transition: all 0.25s;
   display: none;
+  margin: 20px;
 }
 
 .hamburger-top,
@@ -308,7 +313,7 @@ a {
   left: 0;
   width: 24px;
   height: 2px;
-  background: #000;
+  background: $dark-background;
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -336,12 +341,13 @@ a {
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 85px;
+  top: 0px;
+  z-index: 10;
   right: 0;
-  background-color: #fff;
-  color: #000;
-  width: 90%;
-  height: 100%;
+  background-color: $dark-background;
+  color: $light-text-color;
+  width: 50%;
+  height: 30%;
   padding: 30px;
   box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
     inset 0 4px 2px -2px rgb(0 0 0 / 7%);
@@ -349,10 +355,13 @@ a {
 }
 
 .mobile-menu ul {
-  line-height: 3;
-  border-bottom: #777 solid 1px;
+  line-height: 2;
   padding-bottom: 10px;
   margin-bottom: 30px;
+}
+
+.mobile-menu li{
+	list-style: none;
 }
 
 .mobile-menu a {
@@ -365,7 +374,7 @@ a {
 }
 
 .hidden {
-  transform: translateX(100%);
+  transform: translateY(-100%);
 }
 
 .no-scroll {
@@ -373,16 +382,97 @@ a {
 }
 
 @media(max-width: 768px) {
-	.main-nav {
-		button {
-			all: none;
-		}
 
+	.main-nav {
+		display: none;
+	}
+
+	#header {
 		button:hover {
-			all: none;
+			background: none;
 		}
 	}
+
 	.hamburger {
     display: block;
   }
+
+  h1 {
+  	font-size: 1.8em;
+  }
+
+  h3 {
+  	font-size: 1.2em;
+  }
+
+  p {
+  	font-size: 1em;
+  	line-height: 1.5;
+  }
+
+  #hero {
+  	height: 80vh;
+  }
+
+  #about .container{
+  	width: 95%;
+
+  	img {
+  		width: 70%;
+  	}
+  }
+
+  .img-bio {
+  	flex-direction: column;
+    align-items: center
+  }
+
+  .skills-tools {
+  	justify-content: space-evenly;
+    flex-direction: column;
+  }
+  #about .container .skills-tools ul {
+  	line-height: 1;
+  }
+
+  #about .container .bio-right p *{
+  	margin: 0;
+  }
+
+  #projects {
+  	.container {
+  		.project-container {
+  			grid-template-columns: unset;
+  			margin-bottom: 50px;
+  		}
+  	}
+  }
+
+  #contact {
+  	height: unset;
+  	
+  	.container {
+			h1 {
+				padding-top: 40px;
+				padding-bottom: 25px;
+			}
+			p {
+				text-align: center;
+			}
+
+			padding-bottom: 20px;
+		}
+	}
+
+	#footer {
+		height: 60vh;
+
+		.container {
+			height: unset;
+
+			ul {
+				flex-wrap: wrap;
+			}
+		}
+	}
 }

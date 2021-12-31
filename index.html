@@ -22,12 +22,12 @@
 				<li><a href="#">Resume</a></li>
 				<li><a href="#contact">Contact Me</a></li>
 			</ul>
-			<button type="button" class="hamburger" id="menu-btn">
-          		<span class="hamburger-top"></span>
-         		<span class="hamburger-middle"></span>
-          		<span class="hamburger-bottom"></span>
-        	</button>
 		</nav>
+		<button type="button" class="hamburger" id="menu-btn">
+      		<span class="hamburger-top"></span>
+     		<span class="hamburger-middle"></span>
+      		<span class="hamburger-bottom"></span>
+        </button>
 	</header>
 
 	<!-- MOBILE MENU -->
@@ -56,35 +56,42 @@
 	<section id="about">
 		<h1 class="about-me buttom">ABOUT ME</h1>
 		<div class="container buttom">
-			<div class="img left">
-				<img src="./img/profile.jpg">
+			<div class="img-bio">
+				<div class="img left">
+					<img src="./img/profile.jpg">
+				</div>
+				<div class="bio right">
+					<p>
+						I am a front-end web developer and user experience designer that is passionate about integrating UX design into building user-centered websites that are modern, accessible and responsive. I got into web development and UX design to develop websites and applications that are useful, equitable, usable and enjoyable.<br> I love how UX design has changed the way we approach designing and developing websites, applications, devices and almost every product in the world.<br>
+						Whenever I’m not coding or designing, I’m usually just either watching football, watching a movie or tv show, reading or playing video games.
+					</p>
+				</div>
 			</div>
-			<div class="bio right">
-				<p>
-					I am a front-end web developer and user experience designer that is passionate about integrating my user experience design knowledge to building user-centered websites that are modern, accessible and responsive. I got into web development and user experience design to develop websites and applications that are useful, equitable, usable and enjoyable. I love how user experience design has changed the way we approach designing and developing websites, applications, devices and almost every product in the world.<br>
-					Whenever I’m not coding or designing, I’m usually just either watching football, watching a movie or tv show, reading or playing video games.
-				</p>
+			<div class="skills-tools">
+				<div class="skills right">
+					<h3>My Skills:</h3>
+					<ul>
+						<li>Web Development</li>
+						<li>UX Design</li>
+						<li>UX Research</li>
+						<li>Database Management</li>
+						<li>Digital Marketing</li>
+						<li>IT Support</li>
+					</ul>
+				</div>
+				<div class="tools right">
+					<h3>My Tools:</h3>
+					<ul>
+						<li>HTML/CSS/Sass</li>
+						<li>Javascript/ReactJS</li>
+						<li>Adobe XD</li>
+						<li>Figma</li>
+						<li>Firebase</li>
+						<li>MS Office</li>
+					</ul>
+				</div>
 			</div>
-			<div class="skills right">
-				<h3>My Skills and Tools:</h3>
-				<ul>
-					<li>Web Development</li>
-					<li>UX Design</li>
-					<li>UX Research</li>
-					<li>Database Management</li>
-					<li>Digital Marketing</li>
-					<li>IT Support</li>
-				</ul>
-				<ul>
-					<li>HTML/CSS/Sass</li>
-					<li>Javascript/ReactJS</li>
-					<li>Adobe XD</li>
-					<li>Figma</li>
-					<li>Firebase</li>
-					<li>MS Office</li>
-				</ul>
-				<a href="#"><button class="btn view-resume">View Resume</a></button>
-			</div>
+			<a href="#"><button class="btn view-resume">View Resume</a></button>
 		</div>
 	</section>
 
@@ -156,9 +163,9 @@
 	</footer>
 
 	<script type="text/javascript">
-		ScrollReveal().reveal('.left', {delay: 500, distance: '50px', origin: 'left'});
-		ScrollReveal().reveal('.right', {delay: 500, distance: '50px', origin: 'right'});
-		ScrollReveal().reveal('.buttom', {delay: 500, distance: '50px', origin: 'bottom'});
+		ScrollReveal().reveal('.left', {distance: '50px', origin: 'left', mobile: false});
+		ScrollReveal().reveal('.right', {distance: '50px', origin: 'right', mobile: false});
+		ScrollReveal().reveal('.buttom', {distance: '50px', origin: 'bottom', mobile: false});
 	</script>
 	<script src="script.js"></script>
 
