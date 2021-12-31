@@ -401,13 +401,14 @@ a {
   }
 
   #footer {
-    height: 60vh;
+    height: 30vh;
   }
   #footer .container {
     height: unset;
+    justify-content: space-between;
   }
-  #footer .container ul {
-    flex-wrap: wrap;
+  #footer .container i {
+    font-size: 2em;
   }
 }
 

@@ -465,13 +465,14 @@ a {
 	}
 
 	#footer {
-		height: 60vh;
+		height: 30vh;
 
 		.container {
 			height: unset;
+			justify-content: space-between;
 
-			ul {
-				flex-wrap: wrap;
+			i {
+				font-size: 2em;
 			}
 		}
 	}
