@@ -176,7 +176,7 @@ a {
 			display: flex;
 			justify-content: center;
     	align-items: center;
-    	width: 100%;
+    	width: 50%;
 		}
 
 		img {
@@ -416,6 +416,10 @@ a {
 
   #about .container{
   	width: 95%;
+
+  	.img {
+  		width: 100%;
+  	}
 
   	img {
   		width: 70%;
