@@ -58,9 +58,19 @@ button:hover {
   color: #D0F3FA;
 }
 
+button:focus {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:focus {
+  opacity: 0.5;
+  transform: scale(1.1);
 }
 
 #header a:hover {
@@ -81,6 +91,9 @@ a {
 #header ul li:hover {
   background-color: #0077B6;
   color: #D0F3FA;
+}
+#header ul li:focus {
+  transform: scale(1.1);
 }
 
 #hero {

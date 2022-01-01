@@ -64,9 +64,19 @@ button:hover {
   color: $light-text-color;
 }
 
+button:focus {
+	opacity: 0.5;
+	transform: scale(1.1);
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+a:focus {
+	opacity: 0.5;
+	transform: scale(1.1);
 }
 
 // HEADER AND NAVBAR
@@ -93,6 +103,10 @@ a {
 		li:hover {
 			background-color: $dark-background;
 			color: $light-text-color;
+		}
+
+		li:focus {
+			transform: scale(1.1);
 		}
 	}
 }
