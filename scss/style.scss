@@ -16,8 +16,7 @@ html {
 
 body {
 	font-family: 'Lato', sans-serif;
-	font-weight: 600;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: $dark-text-color;
 	background: $light-background;
 }
@@ -98,6 +97,7 @@ a:focus {
 			list-style: none;
 			padding: 10px;
 			transition: all 0.3s ease;
+			font-weight: bolder;
 		}
 
 		li:hover {
@@ -298,7 +298,8 @@ a:focus {
 
 		i:hover {
 			cursor: pointer;
-			font-weight: bolder;
+			// font-weight: bolder;
+			transform: scale(1.2);
 		}
 	}
 }
@@ -384,7 +385,7 @@ a:focus {
 }
 
 .mobile-menu a:hover {
-  color: $dark-text-color;
+  font-weight: bolder;
 }
 
 .hidden {

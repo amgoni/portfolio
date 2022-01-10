@@ -10,8 +10,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #103B74;
   background: #D0F3FA;
 }
@@ -87,6 +86,7 @@ a:focus {
   list-style: none;
   padding: 10px;
   transition: all 0.3s ease;
+  font-weight: bolder;
 }
 #header ul li:hover {
   background-color: #0077B6;
@@ -247,7 +247,7 @@ a:focus {
 }
 #footer .container i:hover {
   cursor: pointer;
-  font-weight: bolder;
+  transform: scale(1.2);
 }
 
 /* Hamburger Menu Icon */
@@ -328,7 +328,7 @@ a:focus {
 }
 
 .mobile-menu a:hover {
-  color: #103B74;
+  font-weight: bolder;
 }
 
 .hidden {
