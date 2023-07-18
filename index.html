@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Amin Goni, front-end developer, Nigerian developer, website developer, UX Designer, Nigerian UX Designer, React developer">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="scss/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,15 +12,7 @@
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<title>Amin Goni | Front-end Web Dev</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6QDF8MHPZW"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
 
-	gtag('config', 'G-6QDF8MHPZW');
-	</script>
 </head>
 <body>
 	<!-- HEADER -->
@@ -56,8 +48,8 @@
 	<section id="hero">
 		<div class="container left">
 			<h1>Hi, my name is Amin Mohammed Goni.<br>
-			I am a Front-End Web Developer and UX Designer.</h1>
-			<a href="#contact"><button class="btn">Hire Me</button></a>
+			I am a Front-End Web Developer.</h1>
+			<a href="mailto:ameen.m.goney@gmail.com"><button class="btn">Hire Me</button></a>
 		</div>
 	</section>
 
@@ -72,9 +64,11 @@
 				</div>
 				<div class="bio right">
 					<p>
-						I am a front-end web developer and user experience designer that is passionate about integrating UX design to building user-centered websites that are modern, accessible and responsive.<br> 
-						I love how UX design has changed the way we approach designing and developing websites, applications, devices and almost every product in the world.<br>
-						Whenever I’m not coding or designing, I’m usually just either watching football, watching a movie or tv show, reading or playing video games.
+						I am a passionate front-end web developer dedicated to integrating UX design principles into the creation of modern, accessible, and responsive websites. I am thrilled by how UX design has revolutionized the way we approach developing websites, applications, devices, and various products worldwide. <br>
+
+In addition to my technical skills, I possess a knack for writing. I actively engage in producing captivating content for blogs, leveraging my ability to translate intricate technical concepts into accessible and informative articles. This allows me to connect with a diverse audience and contribute knowledge to the developer community. <br>
+
+Outside of coding and design, you'll often find me indulging in my hobbies such as watching football, movies, or TV shows, reading, or playing video games.
 					</p>
 				</div>
 			</div>
@@ -83,9 +77,8 @@
 					<h3>My Skills:</h3>
 					<ul>
 						<li>Web Development</li>
-						<li>UX Design</li>
-						<li>UX Research</li>
-						<li>Database Management</li>
+						<li>User Experience</li>
+						<li>Content Writing</li>
 						<li>Digital Marketing</li>
 						<li>IT Support</li>
 					</ul>
@@ -95,10 +88,9 @@
 					<ul>
 						<li>HTML/CSS/Sass</li>
 						<li>Javascript/ReactJS</li>
-						<li>Adobe XD</li>
-						<li>Figma</li>
 						<li>Firebase</li>
 						<li>MS Office</li>
+						<li>Canva</li>
 					</ul>
 				</div>
 			</div>
@@ -111,36 +103,41 @@
 	<section id="projects">
 		<h1 class="bottom">FEATURED PROJECTS</h1>
 		<div class="container">
-				<div class="project-container">
-					<div class="project left">
-						<h3>MetroBase Travels and Tours</h3>
-						<p>This is a fully responsive multi-page website template of a travel agency I made using HTML, CSS and a bit of Javascript.<br><br> This project helped me to practice how to translate a UI design I made to a fully responsive website.</p>
-						<a href="https://amgoni.github.io/company-website/" target="_blank"><button class="btn see-live">See Live</button></a>
-					</div>
-					<div class="right">
-						<img src="./img/project1.png">
-					</div>
+
+			<div class="project-container">
+				<div class="project left">
+					<h3>Studox</h3>
+					<p>Studox is a web application that allows students to search for and access study materials for their courses. It was developed using React and Firebase. <br> Studox offers a simple and intuitive interface for students to search for study materials, access detailed information about them, and easily navigate through search results.</p>
+
+						 </p>
+					<a href="https://studox.netlify.app" target="_blank"><button class="btn see-live">See Live</button></a>
 				</div>
+				<div class="right">
+					<img src="./img/project1.png">
+				</div>
+			</div>
+				
 				<div class="project-container">
 					<div class="project left">
-						<h3>Background Generator</h3>
-						<p>This is a website I developed while learning Javascript.<br><br> It can be used to generate beautiful background gradients that can be used by others. The RGBA code of the color generated is displayed so that users can copy it for their own use.</p>
-						<a href="https://amgoni.github.io/backgroundgenerator/" target="_blank"><button class="btn see-live">See Live</button></a>
+						<h3>Jourknow</h3>
+						<p>Jourknow is a user-friendly web tool designed for searching and exploring research journals across different fields of study. Developed using React, Jourknow seamlessly connects to the CORE journal repository through the CORE API. <br> It offers a straightforward interface for users to search, access detailed information about journals, and easily navigate through search results.</p>
+						<a href="https://jourknow.netlify.app" target="_blank"><button class="btn see-live">See Live</button></a>
 					</div>
 					<div class="right">
-						<img src="./img/project2.jpg">
+						<img src="./img/project2.png">
 					</div>
 				</div>
 				<div class="project-container">
 					<div class="project left">
 						<h3>RoboFriends</h3>
-						<p>This was my first project when I started learning React. It is a simple project that helped me to learn how to make reusable components, import and export components, get a basic understanding of how APIs work and be able to make a fully functional search bar.<br><br> It was a very important project for me because it helped me get my foot on some of the foundations of React.</p>
+						<p>RoboFriends is a simple web application that allows users to search for and access information about robots. It was developed using React and the RoboHash API. <br> RoboFriends offers a simple and intuitive interface for users to search for robots, access detailed information about them, and easily navigate through search results.</p>
 						<a href="https://amgoni.github.io/robofriends/" target="_blank"><button class="btn see-live">See Live</button></a>
 					</div>
 					<div class="right">
 						<img src="./img/project3.png">
 					</div>
 				</div>
+				
 			<a href="https://github.com/amgoni" target="_blank"><button class="btn see-more">See More Projects</button></a>
 		</div>
 	</section>
@@ -150,7 +147,7 @@
 	<section id="contact">
 		<div class="container bottom">
 			<h1 class="buttom">CONTACT ME</h1>
-			<p class="buttom">Looking to hire a Front-End Developer or UX Designer?</p>
+			<p class="buttom">Looking to hire a Front-End Developer or Blog Writer?</p>
 			<a href="mailto:ameen.m.goney@gmail.com"><button class="btn email buttom">E-mail Me!</button></a>
 		</div>
 	</section>
@@ -161,14 +158,14 @@
 		<div class="container buttom">
 			<div class="socials">
 				<ul>
-					<li><a href="https://twitter.com/ameengoni" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<!-- <li><a href="https://twitter.com/ameengoni" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
 					<li><a href="https://github.com/amgoni" target="_blank"><i class="fab fa-github"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/amingoni/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-					<li><a href="https://www.behance.net/aeb883ce" target="_blank"><i class="fab fa-behance"></i></a></li>
+					<!-- <li><a href="https://www.behance.net/aeb883ce" target="_blank"><i class="fab fa-behance"></i></a></li> -->
 				</ul>
 			</div>
 			<div>
-				<p>&copy; Amin Goni, 2022</p>
+				<p>&copy; Amin Goni, 2023</p>
 			</div>
 		</div>
 	</footer>
