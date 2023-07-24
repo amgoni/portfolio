@@ -380,13 +380,16 @@ a:focus {
   #about .container img {
     width: 70%;
   }
+  #about .container .bio {
+    width: 100%;
+  }
   .img-bio {
     flex-direction: column;
     align-items: center;
   }
   .skills-tools {
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
   }
   #about .container .skills-tools ul {
     line-height: 1;

@@ -439,6 +439,10 @@ a:focus {
     img {
       width: 70%;
     }
+
+    .bio {
+      width: 100%;
+    }
   }
 
   .img-bio {
@@ -448,7 +452,7 @@ a:focus {
 
   .skills-tools {
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
   }
   #about .container .skills-tools ul {
     line-height: 1;
