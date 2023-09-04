@@ -207,6 +207,14 @@ a:focus {
   width: 100%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
 }
+#projects .container .project-container .see-more {
+  background-color: #103b74;
+  color: white;
+}
+#projects .container .project-container .see-more:hover {
+  background-color: white;
+  color: #103b74;
+}
 
 #contact {
   background: #0077b6;
