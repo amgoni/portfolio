@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: #103b74;
   background: white;
 }
@@ -111,6 +111,7 @@ a:focus {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(135deg, #3a7bd5, #103b74);
+  background-clip: text;
 }
 #hero button {
   margin-top: 50px;
@@ -289,7 +290,7 @@ a:focus {
   left: 0;
   width: 24px;
   height: 2px;
-  background: #0077b6;
+  background: #103b74;
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -320,7 +321,7 @@ a:focus {
   top: 0px;
   z-index: 10;
   right: 0;
-  background-color: #0077b6;
+  background-image: linear-gradient(135deg, #3a7bd5, #103b74);
   color: white;
   width: 70%;
   height: 100%;
@@ -342,9 +343,6 @@ a:focus {
 .mobile-menu a {
   text-decoration: none;
   font-size: 20px;
-}
-
-.mobile-menu a:hover {
   font-weight: bolder;
 }
 

@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: $dark-text-color;
   background: white;
 }
@@ -127,6 +127,7 @@ a:focus {
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       background-image: linear-gradient(135deg, #3a7bd5, $dark-text-color);
+      background-clip: text;
     }
   }
 
@@ -339,7 +340,7 @@ a:focus {
   left: 0;
   width: 24px;
   height: 2px;
-  background: $dark-background;
+  background: $dark-text-color;
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -370,7 +371,7 @@ a:focus {
   top: 0px;
   z-index: 10;
   right: 0;
-  background-color: $dark-background;
+  background-image: linear-gradient(135deg, #3a7bd5, $dark-text-color);
   color: white;
   width: 70%;
   height: 100%;
@@ -393,9 +394,6 @@ a:focus {
 .mobile-menu a {
   text-decoration: none;
   font-size: 20px;
-}
-
-.mobile-menu a:hover {
   font-weight: bolder;
 }
 

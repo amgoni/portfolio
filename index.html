@@ -1,205 +1,282 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Amin Goni, front-end developer, Nigerian developer, website developer, UX Designer, Nigerian UX Designer, React developer">
-	<link rel="stylesheet" type="text/css" href="scss/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/c2c6510de5.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/scrollreveal"></script>
-	<title>Amin Goni | Front-end Web Dev</title>
-	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Amin Goni, a front-end web developer building scalable and efficient web applications for personal or commercial use."
+    />
+    <meta
+      name="keywords"
+      content="Amin Goni, front-end web developer, web developer, NextJS developer, React developer, Nigeria"
+    />
+    <meta property="og:title" content="Amin Goni | Front-end Web Dev" />
+    <meta
+      property="og:description"
+      content="Portfolio of Amin Goni, a front-end web developer building scalable and efficient web applications for personal or commercial use."
+    />
+    <meta property="og:image" content="img/profile.jpg" />
+    <meta property="og:url" content="https://amingoni.netlify.app" />
+    <link rel="stylesheet" type="text/css" href="scss/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2c6510de5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Amin Goni | Front-end Web Dev</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="menu-btn">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </div>
+    </header>
 
-</head>
-<body>
-	<!-- HEADER -->
-	<header id="header">
-		<nav class="main-nav">
-			<ul>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="resume.pdf" target="_blank">Resume</a></li>
-				<li><a href="#contact">Contact Me</a></li>
-			</ul>
-		</nav>
-		<button type="button" class="hamburger" id="menu-btn">
-      		<span class="hamburger-top"></span>
-     		<span class="hamburger-middle"></span>
-      		<span class="hamburger-bottom"></span>
-        </button>
-	</header>
+    <!-- MOBILE MENU -->
 
-	<!-- MOBILE MENU -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li id="links1"><a href="#projects">Projects</a></li>
+        <li id="links2"><a href="#about">About Me</a></li>
+        <li id="links3"><a href="resume.pdf">Resume</a></li>
+        <li id="links4"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
-	<div class="mobile-menu hidden" id="menu">
-		<ul>
-				<li id="links1"><a href="#projects">Projects</a></li>
-				<li id="links2"><a href="#about">About Me</a></li>
-				<li id="links3"><a href="resume.pdf">Resume</a></li>
-				<li id="links4"><a href="#contact">Contact</a></li>
-		</ul>
-	</div>
+    <!-- HERO -->
 
-	<!-- HERO -->
+    <section id="hero">
+      <div class="container left">
+        <h1>
+          Hi, my name is Amin Mohammed Goni.<br />
+          I am a Front-End Web Developer.
+        </h1>
+        <a href="mailto:ameen.m.goney@gmail.com"
+          ><button class="btn">Hire Me</button></a
+        >
+      </div>
+    </section>
 
-	<section id="hero">
-		<div class="container left">
-			<h1>Hi, my name is Amin Mohammed Goni.<br>
-			I am a Front-End Web Developer.</h1>
-			<a href="mailto:ameen.m.goney@gmail.com"><button class="btn">Hire Me</button></a>
-		</div>
-	</section>
+    <!-- ABOUT -->
 
-	<!-- ABOUT -->
+    <section id="about">
+      <h1 class="about-me buttom">ABOUT ME</h1>
+      <div class="container buttom">
+        <div class="img-bio">
+          <div class="img left">
+            <img src="./img/profile.jpg" />
+          </div>
+          <div class="bio right">
+            <p>
+              I am a passionate front-end web developer dedicated to integrating
+              UX design principles into the creation of modern, scalable,
+              accessible, and responsive websites. I am thrilled by how UX
+              design has revolutionized the way we approach developing websites,
+              applications, devices, and various products worldwide. <br />
 
-	<section id="about">
-		<h1 class="about-me buttom">ABOUT ME</h1>
-		<div class="container buttom">
-			<div class="img-bio">
-				<div class="img left">
-					<img src="./img/profile.jpg">
-				</div>
-				<div class="bio right">
-					<p>
-						I am a passionate front-end web developer dedicated to integrating UX design principles into the creation of modern, accessible, and responsive websites. I am thrilled by how UX design has revolutionized the way we approach developing websites, applications, devices, and various products worldwide. <br>
+              In addition to my technical skills, I possess a knack for writing.
+              I actively engage in producing captivating content for blogs,
+              leveraging my ability to translate intricate technical concepts
+              into accessible and informative articles. This allows me to
+              connect with a diverse audience and contribute knowledge to the
+              developer community. <br />
 
-In addition to my technical skills, I possess a knack for writing. I actively engage in producing captivating content for blogs, leveraging my ability to translate intricate technical concepts into accessible and informative articles. This allows me to connect with a diverse audience and contribute knowledge to the developer community. <br>
+              Outside of coding and design, you'll often find me indulging in my
+              hobbies such as watching football, movies, or TV shows, reading,
+              or playing video games.
+            </p>
+          </div>
+        </div>
+        <div class="skills-tools">
+          <div class="skills right">
+            <h3>My Skills:</h3>
+            <ul>
+              <li>Web Development</li>
+              <li>User Experience</li>
+              <li>Content Writing</li>
+              <li>Digital Marketing</li>
+              <li>IT Support</li>
+            </ul>
+          </div>
+          <div class="tools right">
+            <h3>My Tools:</h3>
+            <ul>
+              <li>HTML/CSS/Sass</li>
+              <li>Javascript/ReactJS/NextJS</li>
+              <li>Firebase</li>
+              <li>MS Office</li>
+              <li>Canva</li>
+            </ul>
+          </div>
+        </div>
+        <a href="resume.pdf" target="_blank"
+          ><button class="btn view-resume">View Resume</button></a
+        >
+      </div>
+    </section>
 
-Outside of coding and design, you'll often find me indulging in my hobbies such as watching football, movies, or TV shows, reading, or playing video games.
-					</p>
-				</div>
-			</div>
-			<div class="skills-tools">
-				<div class="skills right">
-					<h3>My Skills:</h3>
-					<ul>
-						<li>Web Development</li>
-						<li>User Experience</li>
-						<li>Content Writing</li>
-						<li>Digital Marketing</li>
-						<li>IT Support</li>
-					</ul>
-				</div>
-				<div class="tools right">
-					<h3>My Tools:</h3>
-					<ul>
-						<li>HTML/CSS/Sass</li>
-						<li>Javascript/ReactJS</li>
-						<li>Firebase</li>
-						<li>MS Office</li>
-						<li>Canva</li>
-					</ul>
-				</div>
-			</div>
-			<a href="resume.pdf" target="_blank"><button class="btn view-resume">View Resume</a></button>
-		</div>
-	</section>
+    <!-- PROJECTS -->
 
-	<!-- PROJECTS -->
+    <section id="projects">
+      <h1 class="bottom">FEATURED PROJECTS</h1>
+      <div class="container">
+        <div class="project-container">
+          <div class="project left">
+            <h3>Flexnote</h3>
+            <p>
+              Flexnote is a simple note-taking app that allows you to create,
+              edit, and delete notes. You can also organize your notes into
+              folders. <br />
+              I developed the web app using React and Firebase. <br />
+              It offers a straightforward interface for users to create, edit,
+              and delete notes, organize notes into folders, and easily navigate
+              through notes and folders.
+            </p>
+            <div>
+              <a href="https://flexnoteproject.netlify.app" target="_blank"
+                ><button class="btn see-live">See Live</button></a
+              >
+              <a href="https://github.com/amgoni/flexnote" target="_blank"
+                ><button class="btn see-more">See Code</button></a
+              >
+            </div>
+          </div>
+          <div class="right">
+            <img src="./img/project1.png" />
+          </div>
+        </div>
 
-	<section id="projects">
-		<h1 class="bottom">FEATURED PROJECTS</h1>
-		<div class="container">
+        <div class="project-container">
+          <div class="project left">
+            <h3>Tiptop Apartments</h3>
+            <p>
+              Tiptop Apartments is a short-let booking website that allows users
+              to search for and book apartments offered by Tiptop for short
+              stays. <br />
+              I developed the production web app using React and integrated with
+              a proprietary backend. <br />
+              It offers a user-friendly interface for users to search for
+              apartments, view detailed information about them, and book
+              apartments for short stays.
+            </p>
+            <div>
+              <a href="https://jourknow.netlify.app" target="_blank"
+                ><button class="btn see-live">See Live</button></a
+              >
+              <a href="https://github.com/amgoni/jourknow" target="_blank"
+                ><button class="btn see-more">See Code</button></a
+              >
+            </div>
+          </div>
+          <div class="right">
+            <img src="./img/project2.png" />
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="project left">
+            <h3>Studox</h3>
+            <p>
+              Studox is a web application that allows students to search for and
+              access study materials for their courses. <br />
+              I developed the web app using React and Firebase. <br />
+              It offers a simple and intuitive interface for students to search
+              for study materials, access detailed information about them, and
+              easily navigate through search results.
+            </p>
+            <div>
+              <a href="https://studox.netlify.app" target="_blank"
+                ><button class="btn see-live">See Live</button></a
+              >
+              <a href="https://github.com/amgoni/studox" target="_blank"
+                ><button class="btn see-more">See Code</button></a
+              >
+            </div>
+          </div>
+          <div class="right">
+            <img src="./img/project4.png" />
+          </div>
+        </div>
 
-			<div class="project-container">
-				<div class="project left">
-					<h3>Flexnote</h3>
-					<p>Flexnote is a simple note-taking app that allows you to create, edit, and delete notes. You can also organize your notes into folders. <br> Flexnote was developed using React and Firebase. It offers a straightforward interface for users to create, edit, and delete notes, organize notes into folders, and easily navigate through notes and folders.
-					
-						 </p>
-						 <div>
-					<a href="https://flexnoteproject.netlify.app" target="_blank"><button class="btn see-live">See Live</button></a>
-					<a href="https://github.com/amgoni/flexnote" target="_blank"><button class="btn see-more">See Code</button></a>
-				</div>
-				</div>
-				<div class="right">
-					<img src="./img/project1.png">
-				</div>
-			</div>
-				
-				<div class="project-container">
-					<div class="project left">
-						<h3>Jourknow</h3>
-						<p>Jourknow is a user-friendly web tool designed for searching and exploring research journals across different fields of study. Developed using React, Jourknow seamlessly connects to the CORE journal repository through the CORE API. <br> It offers a straightforward interface for users to search, access detailed information about journals, and easily navigate through search results.</p>
-						<div>
-						<a href="https://jourknow.netlify.app" target="_blank"><button class="btn see-live">See Live</button></a>
-						<a href="https://github.com/amgoni/jourknow" target="_blank"><button class="btn see-more">See Code</button></a>
-					</div>
-					</div>
-					<div class="right">
-						<img src="./img/project2.png">
-					</div>
-				</div>
-				<div class="project-container">
-					<div class="project left">
-						<h3>Task Tracker</h3>
-						<p>Task Tracker is a simple web application that allows users to add, delete, and toggle reminders for tasks. It was developed using React and Firebase's realtime database. <br> Task Tracker offers a straightforward interface for users to add tasks, set reminders, and toggle reminders on and off.</p>
-						<div>
-						<a href="https://47tasktracker.netlify.app" target="_blank"><button class="btn see-live">See Live</button></a>
-						<a href="https://github.com/amgoni/task-tracker" target="_blank"><button class="btn see-more">See Code</button></a>
-					</div>
-					</div>
-					<div class="right">
-						<img src="./img/project3.png">
-					</div>
-				</div>
-				<div class="project-container">
-					<div class="project left">
-						<h3>Studox</h3>
-						<p>Studox is a web application that allows students to search for and access study materials for their courses. It was developed using React and Firebase. <br> Studox offers a simple and intuitive interface for students to search for study materials, access detailed information about them, and easily navigate through search results.</p>
-	
-							 </p>
-							 <div>
-						<a href="https://studox.netlify.app" target="_blank"><button class="btn see-live">See Live</button></a>
-						<a href="https://github.com/amgoni/studox" target="_blank"><button class="btn see-more">See Code</button></a>
-							</div>
-					</div>
-					<div class="right">
-						<img src="./img/project4.png">
-					</div>
-				</div>
-				
-			<!-- <a href="https://github.com/amgoni" target="_blank"><button class="btn see-more">See More Projects</button></a> -->
-		</div>
-	</section>
+        <!-- <a href="https://github.com/amgoni" target="_blank"><button class="btn see-more">See More Projects</button></a> -->
+      </div>
+    </section>
 
-	<!-- CONTACT -->
+    <!-- CONTACT -->
 
-	<section id="contact">
-		<div class="container bottom">
-			<h1 class="buttom">CONTACT ME</h1>
-			<p class="buttom">Looking to hire a Front-End Developer or Blog Writer?</p>
-			<a href="mailto:ameen.m.goney@gmail.com"><button class="btn email buttom">E-mail Me!</button></a>
-		</div>
-	</section>
+    <section id="contact">
+      <div class="container bottom">
+        <h1 class="buttom">CONTACT ME</h1>
+        <p class="buttom">
+          Looking to hire a Front-End Developer or Blog Writer?
+        </p>
+        <a href="mailto:ameen.m.goney@gmail.com"
+          ><button class="btn email buttom">E-mail Me!</button></a
+        >
+      </div>
+    </section>
 
-	<!-- FOOTER -->
+    <!-- FOOTER -->
 
-	<footer id="footer">
-		<div class="container buttom">
-			<div class="socials">
-				<ul>
-					<!-- <li><a href="https://twitter.com/ameengoni" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
-					<li><a href="https://github.com/amgoni" target="_blank"><i class="fab fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/amingoni/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-					<!-- <li><a href="https://www.behance.net/aeb883ce" target="_blank"><i class="fab fa-behance"></i></a></li> -->
-				</ul>
-			</div>
-			<div>
-				<p>&copy; Amin Goni, 2023</p>
-			</div>
-		</div>
-	</footer>
+    <footer id="footer">
+      <div class="container buttom">
+        <div class="socials">
+          <ul>
+            <!-- <li><a href="https://twitter.com/ameengoni" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+            <li>
+              <a href="https://github.com/amgoni" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/amingoni/" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <!-- <li><a href="https://www.behance.net/aeb883ce" target="_blank"><i class="fab fa-behance"></i></a></li> -->
+          </ul>
+        </div>
+        <div>
+          <p>&copy; Amin Goni, 2023</p>
+        </div>
+      </div>
+    </footer>
 
-	<script type="text/javascript">
-		ScrollReveal().reveal('.left', {distance: '50px', origin: 'left', mobile: true});
-		ScrollReveal().reveal('.right', {distance: '50px', origin: 'right', mobile: true});
-		ScrollReveal().reveal('.buttom', {distance: '50px', origin: 'bottom', mobile: true});
-	</script>
-	<script src="script.js"></script>
-
-</body>
+    <script type="text/javascript">
+      ScrollReveal().reveal(".left", {
+        distance: "50px",
+        origin: "left",
+        mobile: true,
+      });
+      ScrollReveal().reveal(".right", {
+        distance: "50px",
+        origin: "right",
+        mobile: true,
+      });
+      ScrollReveal().reveal(".buttom", {
+        distance: "50px",
+        origin: "bottom",
+        mobile: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
